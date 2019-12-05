@@ -5,7 +5,7 @@ import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.os.Build;
 import android.provider.Settings.Secure;
-import com.google.firebase.iid.FirebaseInstanceId;
+//import com.google.firebase.iid.FirebaseInstanceId;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import java.util.HashMap;
@@ -76,7 +76,7 @@ public class RNDeviceModule extends ReactContextBaseJavaModule {
     } catch(Exception e) {
       e.printStackTrace();
     }
-    constants.put("instanceId",FirebaseInstanceId.getInstance().getToken());
+    //constants.put("instanceId",FirebaseInstanceId.getInstance().getToken());
     constants.put("deviceName", deviceName);
     constants.put("systemName", "Android");
     constants.put("systemVersion", Build.VERSION.RELEASE);
